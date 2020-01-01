@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="searchbox">
+        <div class="header">
+            <h1>Contacts</h1>
+            <input onkeyup="filter()" type="text" name="" value="" id="value" placeholder="Type to Search">
+        </div>
+        <div class="container">
+            <div class="profile">
+                <span class="icon">M</span>
+                <span class="name">Mosh Hamedani</span>
+            </div>
+            <div class="profile">
+                <span class="icon">C</span>
+                <span class="name">Celine wolves</span>
+            </div>
+            <div class="profile">
+                <span class="icon">J</span>
+                <span class="name">Joseph Balling</span>
+            </div>
+            <div class="profile">
+                <span class="icon">E</span>
+                <span class="name">Emily Noah</span>
+            </div>
+            <div class="profile">
+                <span class="icon">O</span>
+                <span class="name">Oseni Mahmud</span>
+            </div>
+            <div class="profile">
+                <span class="icon">D</span>
+                <span class="name">Didi Hama</span>
+            </div>
+            <div class="profile">
+                <span class="icon">W</span>
+                <span class="name">Walker Stone</span>
+            </div>
+            <div class="profile">
+                <span class="icon">M</span>
+                <span class="name">Makaveli Bolinga</span>
+            </div>
+            <div class="profile">
+                <span class="icon">T</span>
+                <span class="name">Thomas Rhodes</span>
+            </div>
+            <div class="profile">
+                <span class="icon">Y</span>
+                <span class="name">Yomi wolves</span>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function filter() {
+            let value,name,profile,i;
+
+            value = document.getElementById("value").value.toUpperCase();
+            profile = document.getElementsByClassName("profile");
+
+            for(i=0; i<profile.length; i++){
+                name = profile[i].getElementsByClassName("name");
+                if(name[0].innerHTML.toUpperCase().indexOf(value) > -1) {
+                    profile[i].style.display = "flex";
+                } else {
+                    profile[i].style.display = "none";
+                }
+            }
+        }
+    </script t>
+</body>
+</html>

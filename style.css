@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.searchbox {
+    width: 90%;
+    margin: 10px auto;
+}
+
+.header {
+    background: darkslategray;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+}
+
+.header h1 {
+    text-transform: uppercase;
+    color: white;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+#value {
+    border: none;
+    background: grey;
+    padding: 6px;
+    width: 80%;
+    border-radius: 6px;
+    color: white;
+}
+
+.container {
+    background: grey;
+}
+
+.profile {
+    background: 6px 0;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    background: darkslategray;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 80px;
+    margin-right: 9px;
+}
+
+.name{
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+
+
